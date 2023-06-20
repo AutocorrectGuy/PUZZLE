@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./tailwind/output.css" />
+    <script src="./scripts/script.js" defer type="module"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="relative flex flex-col bg-[#040415] text-slate-200 min-h-screen items-center justify-center min-w-fit w-full">
+      <div class="h-14 flex justify-center items-center top-0 w-fit px-6 bg-slate-900 rounded-t-2xl" id="tool-bar">
+        <div class="flex bg-slate-600 rounded-md mr-2 px-2 py-1 font-semibold">
+          <div>Punkti:&nbsp;</div>
+          <div id="points">0</div>
+        </div>
+        <div class="flex items-center justify-center pr-2">
+          <label class="block font-medium text-white h-fit whitespace-nowrap">x:&nbsp;</label>
+          <input
+            type="number"
+            id="count-x"
+            class="border rounded-lg block p-1 bg-gray-700 border-gray-600 placeholder-gray-400 text-white focus:ring-blue-500 focus:border-blue-500 w-12"
+            value="3"
+            min="1"
+            max="20"
+          />
+        </div>
+        <div class="flex items-center justify-center pr-2">
+          <label class="block font-medium text-white h-fit whitespace-nowrap">y:&nbsp;</label>
+          <input
+            type="number"
+            id="count-y"
+            class="border rounded-lg block p-1 bg-gray-700 border-gray-600 placeholder-gray-400 text-white focus:ring-blue-500 focus:border-blue-500 w-12"
+            value="4"
+            min="1"
+            max="20"
+          />
+        </div>
+        <button id="resign" class="bg-slate-500 hover:bg-slate-700 text-white font-semibold py-1 px-2 mr-2 rounded">
+          Padoties
+        </button>
+        <button id="start-game" class="bg-slate-500 hover:bg-slate-700 text-white font-semibold py-1 px-2 mr-2 rounded">
+          Jauna spēle
+        </button>
+        <button id="tips" class="bg-slate-500 hover:bg-slate-700 text-white font-semibold py-1 px-2 rounded">?</button>
+      </div>
+      <canvas class="rounded-b-xl overflow-hidden border border-slate-800 rounded-2xl"></canvas>
+      <div class="flex rounded-md mr-2 px-2 py-1 font-normal text-slate-300 py-2">
+        <div>Autors:&nbsp;</div>
+        <a class='bg-slate-800 rounded-md px-2 text-[#FF2579]' href='https://github.com/AutocorrectGuy'>Mārtiņš Stūrainis</a>
+      </div>
+    </div>
+  </body>
+</html>
