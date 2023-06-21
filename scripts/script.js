@@ -1,7 +1,7 @@
 import { Game } from '/scripts/Game.js'
 
 // const puzzleImage = 'https://art.pixilart.com/sr2ccb4a8a5dd4c.png'
-const puzzleImage = 'https://art.pixilart.com/sr2d67bff95as003.png'
+const puzzleImage = './assets/ai_generated_image.png'
 
 /**@type{HTMLCanvasElement} */
 const canvas = document.getElementsByTagName('canvas')[0]
